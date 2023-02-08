@@ -17,6 +17,11 @@ body{
     color:  ${(props) => props.theme["gray-300"]};
 }
 
+a{
+    text-decoration: none;
+    color:  ${(props) => props.theme["gray-300"]};
+}
+
 body,input,textarea,button{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
