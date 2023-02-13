@@ -113,6 +113,6 @@ export const TaskInput = styled(BaseInput)`
   }
 `;
 
-export const MinutesAmpuntInput = styled(BaseInput)`
+export const MinutesAmountInput = styled(BaseInput)`
   width: 4rem;
 `;
