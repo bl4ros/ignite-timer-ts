@@ -5,6 +5,7 @@ import { defaultTheme } from "./styles/themes/default";
 import { BrowserRouter } from "react-router-dom";
 
 import { Router } from "../src/Router";
+import { CyclesContextProvider } from "./context/CyclesContext";
 // import { Home } from "./Home";
 
 export function App() {
@@ -17,7 +18,9 @@ export function App() {
 
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
-        <Router />
+        <CyclesContextProvider>
+          <Router />
+        </CyclesContextProvider>
       </BrowserRouter>
       <GlobalStyle />
     </ThemeProvider>
